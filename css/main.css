@@ -23,6 +23,7 @@ html {
   p {
     color: #c09;
     max-width: 19em;
+    top: 200px;
     transform: rotate(-10deg);
   }
 
@@ -32,6 +33,11 @@ html {
 
   img {
     position: absolute;
+  }
+
+  .text {
+    right: 250px;
+    bottom: 400px;
   }
 
   .mint {
@@ -50,7 +56,13 @@ html {
 
     }
 
+    .whole {
+      animation: drop top 1s linear;
+      scale: 50%;
+    }
+
   .cone {
+    animation: wiggle top 2s linear;
     right: 75px;
     bottom: 50px;
   }
@@ -73,6 +85,7 @@ html {
   .btn {
     border-color: #c09;
     position: absolute;
+    top: 260px;
   }
 
   .btn:hover {
