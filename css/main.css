@@ -37,6 +37,7 @@ html {
 
   .text {
     bottom: 100px;
+    text-shadow: 1;
     animation: move-text 1s linear forwards;
   }
 
@@ -55,53 +56,95 @@ html {
 
   }
 
-  .mint {
-    right: 10px;
-    bottom: 200px;
+  .ice-cream {
+    left: 50%;
     width: 180px;
+    transform: translateX(-50px);
+    bottom: 100%;
   }
 
-  @keyframes mint-drop {
-      0% {
-        top: -100px;
-      }
-
-      100% {
-        bottom: 200px;
-      }
-
-    }
-
-    .whole {
-      animation: drop top 1s linear;
-      scale: 50%;
-      background-color: red;
-      min-height: 480px;
-    }
-
-  .cone {
-    animation: wiggle top 2s linear;
-    right: 30px;
-    bottom: 10px;
-    width: 180px;
-  }
-
-  .chocolate {
-    right: 60px;
-    bottom: 320px;
-    width: 180px;
-  }
-
-  .vanilla {
-    right: 80px;
-    top: 190px;
-    width: 180px;
+  .whole {
+    min-height: 480px;
   }
 
   .cherry {
-    right: 75px;
-    top: 80px;
-    width: 180px;
+    animation: cherry-drop 150ms 1.5s ease-in forwards;
+  }
+
+  @keyframes cherry-drop {
+
+    0% {
+      bottom: 100%
+    }
+
+    100% {
+      bottom: 350px;
+    }
+
+  }
+
+  .vanilla {
+    animation: vanilla-drop .2s .9s ease-in forwards;
+  }
+
+  @keyframes vanilla-drop {
+
+    0% {
+      bottom: 100%
+    }
+
+    100% {
+      bottom: 280px;
+    }
+
+  }
+
+
+  .chocolate {
+    animation: chocolate-drop .3s .6s ease-in forwards;
+  }
+
+  @keyframes chocolate-drop {
+
+    0% {
+      bottom: 100%
+    }
+
+    100% {
+      bottom: 200px;
+    }
+
+  }
+
+  .mint {
+    animation: mint-drop .3s .3s ease-in forwards;
+  }
+
+  @keyframes mint-drop {
+    0% {
+      bottom: 100%;
+    }
+
+    100% {
+      bottom: 110px;
+    }
+
+  }
+
+  .cone {
+    animation: cone-drop .3s ease-in forwards;
+  }
+
+  @keyframes cone-drop {
+
+    0% {
+      bottom: 100%
+    }
+
+    100% {
+      bottom: 0px;
+    }
+
   }
 
   .btn {
