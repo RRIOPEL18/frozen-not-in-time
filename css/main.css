@@ -36,13 +36,29 @@ html {
   }
 
   .text {
-    right: 250px;
-    bottom: 400px;
+    bottom: 100px;
+    animation: move-text 1s linear forwards;
+  }
+
+  @keyframes move-text {
+
+    0% {
+      opacity: 0;
+      bottom: 100%;
+      filter: blur(10px);
+    }
+
+    100% {
+      opacity: 1;
+      filter: blur(0);
+    }
+
   }
 
   .mint {
-    right: 75px;
+    right: 10px;
     bottom: 200px;
+    width: 180px;
   }
 
   @keyframes mint-drop {
@@ -59,39 +75,43 @@ html {
     .whole {
       animation: drop top 1s linear;
       scale: 50%;
+      background-color: red;
+      min-height: 480px;
     }
 
   .cone {
     animation: wiggle top 2s linear;
-    right: 75px;
-    bottom: 50px;
+    right: 30px;
+    bottom: 10px;
+    width: 180px;
   }
 
   .chocolate {
     right: 60px;
     bottom: 320px;
+    width: 180px;
   }
 
   .vanilla {
     right: 80px;
     top: 190px;
+    width: 180px;
   }
 
   .cherry {
     right: 75px;
     top: 80px;
+    width: 180px;
   }
 
   .btn {
     border-color: #c09;
-    position: absolute;
-    top: 260px;
   }
 
-  .btn:hover {
+  .btn-ghost:hover {
     border-color: #c09;
   }
 
   .btn-ghost {
-
+    border-color: #c09;
   }
