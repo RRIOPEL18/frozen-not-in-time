@@ -1,7 +1,6 @@
 html {
   font-family: "Fredoka One", sans-serif;
-  background:
-  repeating-linear-gradient(-45deg, #c9fcff, #c9fcff 10px, #d4fdff 10px, #d4fdff 20px);
+  background: repeating-linear-gradient(-45deg, #c9fcff, #c9fcff 10px, #d4fdff 10px, #d4fdff 20px);
 }
 
 header {
@@ -68,12 +67,13 @@ img {
 @keyframes cherry-drop {
 
   0% {
-    bottom: 100%
+    bottom: 100%;
   }
 
   100% {
     bottom: 350px;
   }
+
 }
 
 .vanilla {
@@ -83,12 +83,13 @@ img {
 @keyframes vanilla-drop {
 
   0% {
-    bottom: 100%
+    bottom: 100%;
   }
 
   100% {
     bottom: 280px;
   }
+
 }
 
 .chocolate {
@@ -98,12 +99,13 @@ img {
 @keyframes chocolate-drop {
 
   0% {
-    bottom: 100%
+    bottom: 100%;
   }
 
   100% {
     bottom: 200px;
   }
+
 }
 
 .mint {
@@ -128,11 +130,11 @@ img {
 @keyframes cone-drop {
 
   0% {
-    bottom: 100%
+    bottom: 100%;
   }
 
   100% {
-    bottom: 0px;
+    bottom: 0%;
   }
 
 }
