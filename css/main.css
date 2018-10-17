@@ -37,7 +37,7 @@ html {
 
   .text {
     bottom: 100px;
-    text-shadow: 1;
+    text-shadow: 2px 2px #b3fbff;
     animation: move-text 1s linear forwards;
   }
 
